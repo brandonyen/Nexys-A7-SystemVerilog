@@ -16,7 +16,6 @@ module siren (
     logic signed [15:0] data_L, data_R;  // 16-bit signed audio data
     logic dac_load_L, dac_load_R;    // DAC load signals
     logic slo_clk, sclk, audio_CLK;  // clocks
-    logic [15:0] audio_data;         // audio data
 
     // Timing process (20-bit binary counter to generate timing signals)
     always_ff @(posedge clk_50MHz) begin
